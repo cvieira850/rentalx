@@ -50,7 +50,13 @@
               "ts": "never"
             }
         ],
-        "prettier/prettier": "error"
+        "prettier/prettier": "error",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+              "devDependencies": ["**/*.spec.ts", "jest.config.ts"]
+            }
+          ]
     },
     "settings": {
         "import/resolver": {
